@@ -2,21 +2,14 @@
 title: "05장. 부호화와 발전"
 author: Bae Sangwoo
 date: 2024-12-08 14:00:00 +0900
-categories:
-  - Study
-  - 데이터 중심 어플리케이션 설계
-tags:
-  - study
-  - data
-  - design
-  - architecture
+categories: [Study, 데이터 중심 어플리케이션 설계]
+tags: [study, data, design, architecture]
 image:
   src: https://wikibook.co.kr/images/cover/l/9791158393601.jpg
 ---
 
 
-
-> 복제를 위한 데이터 변경 처리에 대한 어려움을 알아보자
+> 복제를 위한 데이터 변경 처리에 대한 어려움을 알아보자
 
 > 잘못될 수 있는 것과 잘못될 수 없는 것 사이의 주된 차이점은 잘못될 수 없는 것이 잘못됐을 때는 잘못을 파악하거나 고치는 것은 거의 불가능하다는 점이다. - 더글라스 애덤스, 대체로 무해함(1992)
 
