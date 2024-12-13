@@ -1,5 +1,5 @@
 ---
-title: "05장. 부호화와 발전"
+title: "05장. 복제"
 author: Bae Sangwoo
 date: 2024-12-08 14:00:00 +0900
 categories: [Study, 데이터 중심 어플리케이션 설계]
