@@ -189,9 +189,11 @@ image:
 
 #### 2.3.1. 원자적 쓰기 연산
 - 여러 데이터베이스에서 원자적 갱신 연산을 제공하여 read-modify-write 주기를 구현할 필요를 없애준다.
-  ```sql
+
+```sql
   UPDATE counters SET value = value + 1 WHERE key = 'foo';
 ```
+
 - 원자적 연산은 객체를 읽을 때 그 객체에 독점적인 잠금을 획득해서 구현한다. - **커서 안정성 (cursor stability)**
 - 그냥 모든 원자적 연산을 단일 스레드에서 실행되도록 강제하는 방법이 있다.
 - 애플리케이션에서 ORM을 사용하면 read-modify-write 코드 작성이 더 쉽다.
@@ -208,9 +210,11 @@ image:
 
 #### 2.3.4. Compare-and-set
 - 이 연산의 목적은 값을 마지막으로 읽은 후로 변경되지 않았을 때만 갱신을 허용함으로써 갱신 손실을 회피하는 것이다.
-  ```sql
+
+```sql
   UPDATE ... SET ... WHERE id = 1234 AND content = 'old content';
 ```
+-
 - content가 일치하지 않으면 이 갱신은 적용되지 않는다.
 - DB에서 오래된 스냅숏으로부터 읽는 것을 허용한다면 이 구문은 갱신 손실을 막지 못할 수도 있다.
 - 데이터베이스의 compare-and-set 연산에 의존하기 전에 먼저 안전한지 확인이 필요하다.
